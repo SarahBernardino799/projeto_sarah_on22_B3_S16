@@ -4,19 +4,8 @@ const dancaSchema = mongoose.Schema(
         _id: {
             type: mongoose.Schema.Types.ObjectId,
             default: () => new mongoose.Types.ObjectId(),
-           },
-       /* usuario:{
-            type: String,
-            required: true,
-            unique: true, 
-           },
-        email:{
-            type: String
         },
-        senha:{
-            type:String
-        },*/
-        nome_Danca:{
+        nome_Danca: {
             type: String,
             required: true,
             unique: true,
@@ -25,25 +14,25 @@ const dancaSchema = mongoose.Schema(
             type: String,
             required: true,
         },
-        numero_de_bailarinas:{
+        numero_de_bailarinas: {
             type: Number,
             required: true,
         },
-        nomes_das_Bailarinas:{
+        nome_das_bailarinas: {
             type: [String],
             required: true,
         },
-        available:{
+        available: {
             type: Boolean,
             required: true,
         },
-        description:{ 
-            type: String, 
+        description: {
+            type: String,
             minLength: 20,
-            maxLength:500,
+            maxLength: 500,
             default: "não informado."
         }
-    }, 
+    },
     {
         versionkey: false
     }
