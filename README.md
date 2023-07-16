@@ -2,7 +2,8 @@
 ## SARAH BERNARDINO
 ### Festival 
 ### **MINHA HISTÓRIA** 
-Olá me chamo Sarah sou voluntária em organização de eventos, participo do **24° Festival do Ballet Raio de Sol** ` A Magia do Circo. ` 
+Olá me chamo Sarah sou voluntária em organização de eventos, participo do **24° Festival do Ballet Raio de Sol** ` A Magia do Circo. `  
+
 
 ### 🌈 **Apresentação** 
  Este é o projeto de conclusão do bootcamp de back-end da Turma On22 da [{Reprograma}](https://www.reprograma.com.br/).
@@ -18,9 +19,7 @@ _________________________________________
 
 ✔️ Listar todas as danças
 
-✔️ Visualizar dança por ID
-
-✔️ Visualizar cursos por disponibilidade
+✔️ Visualizar uma dança específica pelo ID
 
 ✔️ Atualizar uma dança específica pelo ID
 
@@ -53,8 +52,7 @@ ________________________________________
   |           
   |-  📄 .env
   |-  📄 .env.example 
-  |-  📄 .gitignore 
-  |-  📄 LICENSE  
+  |-  📄 .gitignore  
   |-  📄 package-lock.json   
   |-  📄 pakage.json 
   |-  📄 README.md 
