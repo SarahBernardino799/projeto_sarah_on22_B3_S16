@@ -31,7 +31,12 @@ const dancaSchema = mongoose.Schema(
             minLength: 20,
             maxLength: 500,
             default: "não informado."
-        }
+        },
+        cadastro: {
+            type: mongoose.Schema.Types.ObjectId,
+            required: true,
+            ref: "Cadastro",
+        },
     },
     {
         versionkey: false

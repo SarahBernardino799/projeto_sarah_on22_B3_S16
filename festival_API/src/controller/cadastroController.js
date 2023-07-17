@@ -1,5 +1,4 @@
-const dancaModel = require("../models/dancaModel");
-const Cadastro = require("../models/cadastroModel")
+const Cadastros = require("../models/cadastroModel");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const SECRET = process.env.SECRET;
@@ -11,33 +10,34 @@ const findAllCadastro = async (req, res) => {
             return res.status(401).send("Atenção! Voçê esqueceu de adicionar o TOKEN!")
         }
         const token = authHeader.split(" ")[1]
-        jwt.verify(token, SECRET, async function (error) {
-         if (error) {
-        return res.status(403).send("acesso não autorizado!! adicione o token correto")
+        jwt.verify(token, SECRET, async function (err) {
+            if (err) {
+                 return res.status(403).send("acesso não autorizado!! adicione o token correto")
             }
-        const allCadastro = await Cadastro.find();
-        res.status(200).json(allCadastro)
-        
+            const allCadastro = await Cadastros.find();
+            res.status(200).json(allCadastro)
+
         })
-    } catch (error) {
-        console.log(error)
+        console.log("todos os cadastros disponiveis estam aqui.")
+    } catch (err) {
+        console.log(err)
         res.status(500).json({
-            message: error.message
+            message: err.message
         })
+        console.log("erro")
     }
-}
+};
 
 const addNewCadastro = (req, res) => {
     const senhaComHash = bcrypt.hashSync(req.body.senha, 10)
     req.body.senha = senhaComHash
 
-    const cadastro = new Cadastro(req.body)
+    const cadastro = new Cadastros(req.body)
 
     cadastro.save(function (err) {
         if (err) {
             res.status(500).send({ message: err.message })
         }
-
         res.status(201).send(cadastro.toJSON())
     })
 }
@@ -49,25 +49,25 @@ const deleteCadastro = async (req, res) => {
         }
         const token = authHeader.split(" ")[1]
 
-        jwt.verify(token, SECRET, async function (error) {
-            if (error) {
+        jwt.verify(token, SECRET, async function (err) {
+            if (err) {
                 return res.status(403).send("acesso não autorizado!! adicione o token correto")
             }
             const { id } = req.params
-            await Cadastro.findByIdAndDelete(id)
+            await Cadastros.findByIdAndDelete(id)
             const message = `O cadastro com id: ${id} foi deletado com sucesso!`
             res.status(200).json({ message })
         })
 
-    } catch (error) {
-        console.error(error)
+    } catch (err) {
+        console.error(err)
         res.status(500).json({
-            message: error.message
+            message: err.message
         })
     }
 }
 const login = (req, res) => {
-    Cadastro.findOne({ email: req.body.email }, function (err, cadastro) {
+    Cadastros.findOne({ email: req.body.email }, function (err, cadastro) {
         if (!cadastro) {
             return res.status(404).send(`não existe cadastro com o email ${req.body.email}!`)
         }
