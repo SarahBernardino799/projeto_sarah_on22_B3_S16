@@ -2,15 +2,14 @@
 ## SARAH BERNARDINO
 ### Festival 
 ### **MINHA HISTÓRIA** 
-Olá me chamo Sarah sou voluntária em organização de eventos, participo do **24° Festival do Ballet Raio de Sol** ` A Magia do Circo. `  
-
+Olá me chamo Sarah sou voluntária em organização de eventos, participo do **24° Festival do Ballet Raio de Sol** ` A Magia do Circo. ` 
 
 ### 🌈 **Apresentação** 
  Este é o projeto de conclusão do bootcamp de back-end da Turma On22 da [{Reprograma}](https://www.reprograma.com.br/).
 
  Este projeto é uma API com CRUD completo que contém um banco de dados e Autenticação. Possui a intenção de cadastrar Danças que estão no portifólio do festival que facilita a visualização da quantidade de bailarinas, descrição das danças.
 
- ### 🌈 **Funcionalidades**
+ ### ✨ **Funcionalidades**
 
 #### **Para as danças**
 _________________________________________
@@ -23,11 +22,11 @@ _________________________________________
 
 ✔️ Atualizar uma dança específica pelo ID
 
-✔️ Remover uma dança específica do banco de dados
+✔️ Remover uma dança específica pelo ID do banco de dados
 
 
 ________________________________________
-#### 🏗️ **Arquitetura MVC**
+### 🏗️ **Arquitetura MVC**
 ________________________________________
 
 ```
@@ -39,11 +38,14 @@ ________________________________________
   |-  📁 src  
   |    |- 📁 database  
   |         |- 📄 bdConnect.js    
-  |    |- 📁 controllers    
+  |    |- 📁 controllers   
+            |- 📄 cadastroController.js 
   |         |- 📄 dancaController.js     
   |    |- 📁 models  
+            |- 📄 cadastroModel.js
   |         |- 📄 dancaModel.js  
   |    |- 📁 routes  
+            |- 📄 cadastroRoutes.js
   |         |- 📄 dancaRoutes.js     
   |         
   |    |- 📄 app.js  
@@ -52,7 +54,7 @@ ________________________________________
   |           
   |-  📄 .env
   |-  📄 .env.example 
-  |-  📄 .gitignore  
+  |-  📄 .gitignore 
   |-  📄 package-lock.json   
   |-  📄 pakage.json 
   |-  📄 README.md 
@@ -62,7 +64,7 @@ ________________________________________
   ```
 <br>
 
-  ## 📦 **Dependências e Tecnologias**
+  ### 📦 **Dependências e Tecnologias**
 
 <br>
 
@@ -162,7 +164,7 @@ versão
 ```
 <br>
 
-## 📌 **Rotas - EndPoint**
+### 📌 **Rotas - EndPoint**
 
 <br>
 
@@ -186,14 +188,14 @@ versão
 
 <br>
 
-## 📚 **Documentação da API**
+### 📚 **Documentação da API**
 ________________________________________________________________________________
 
 📝[Swagger](https://festival-api.onrender.com/minha-rota-de-documentacao/)
 
 
 
-## ✨ **Instalação e Contribuição no projeto** 
+### ✨ **Instalação e Contribuição no projeto** 
 ________________________________________________________________
 1. Faça um **fork** do projeto.
 2. Realize o clone do projeto através do `git clone <link_do_fork_do_repositorio>`
@@ -204,6 +206,9 @@ ________________________________________________________________
 
 <br>
 
-## 🗺️ **Referências**
+### 🗺️ **Referências**
 _________________________________________________________
 - [Emojis](https://emojipedia.org/)
+---------------------------------------------------------
+
+### ❤️ Agradecimentos
