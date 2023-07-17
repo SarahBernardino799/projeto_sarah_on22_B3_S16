@@ -9,8 +9,10 @@ app.use(cors());
 mongoose.connect();
 
 const dancaRoutes = require("./routes/dancaRoutes");
+const cadastroRoutes = require("./routes/cadastroRoutes");
 
 app.use("/festival/dancas",dancaRoutes);
+app.use("/festival/cadastro", cadastroRoutes);
 const swaggerUi = require("swagger-ui-express")
 const swaggerFile = require("../swagger/swagger_output.json")
 app.use("/minha-rota-de-documentacao", swaggerUi.serve, swaggerUi.setup(swaggerFile))
