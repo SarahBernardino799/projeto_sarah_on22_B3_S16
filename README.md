@@ -24,6 +24,16 @@ _________________________________________
 
 ✔️ Remover uma dança específica pelo ID do banco de dados
 
+#### **Para os cadastros**
+_________________________________________
+
+✔️ Cadastrar novos usuários.
+
+✔️ Listar todos os cadastros.
+
+✔️ Login adicionando usuario e senha.
+
+✔️ Remover um cadastro específico pelo ID no banco de dados.
 
 ________________________________________
 ### 🏗️ **Arquitetura MVC**
@@ -179,6 +189,15 @@ versão
 | GET    | /:id            | Mostrar as danças pelo ID                  |   200  |  ❌  |
 | DELETE | /:id            | Remove uma dança                           |   200  |  ✔️  |
 | PATCH  | /:id            | Altera a dança                             |   200  |  ❌  |
+<br>
+- Cadastro
+
+| Verbo  |   EndPoint      |        Descrição da Rota                   | Status | Auth |
+| ------ | --------------- | -------------------------------------------| ------ |------|
+| POST   | /add            | Adicionar uma novo usuário                 |   201  |  ❌  |
+| GET    | /all            | Listar todas as danças                     |   200  |  ✔️  |
+| POST   | /login          | login: email e senha                       |   200  |  ❌  |
+| DELETE | /:id            | Remove uma dança pelo ID                   |   200  |  ✔️  |
 <br>
 
 <br>
