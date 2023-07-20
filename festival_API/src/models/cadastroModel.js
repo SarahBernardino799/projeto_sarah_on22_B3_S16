@@ -1,4 +1,3 @@
-
 const mongoose = require ("mongoose")
 const cadastroSchrema = new mongoose.Schema( 
 {
@@ -7,24 +6,17 @@ const cadastroSchrema = new mongoose.Schema(
         default: () => new mongoose.Types.ObjectId(),
        },
     usuario:{
-        type: String,
-        required: true,
-        unique: true, 
+        type: String,   
        },
     email:{
-        type: String,
-        required: true,
-        unique: true,
+        type: String,    
     },
     senha:{
         type:String,
-        required: true,
-        unique: true,
     }
 },
 {
     versionKey: false
-}
-)
+})
 const cadastro = mongoose.model("Cadastro", cadastroSchrema)
 module.exports = cadastro

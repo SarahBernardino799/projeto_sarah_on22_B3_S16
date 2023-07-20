@@ -16,9 +16,9 @@ const findAllCadastro = async (req, res) => {
             }
             const allCadastro = await Cadastros.find();
             res.status(200).json(allCadastro)
-
+            console.log("todos os cadastros disponiveis estam aqui.", allCadastro)
         })
-        console.log("todos os cadastros disponiveis estam aqui.")
+        
     } catch (err) {
         console.log(err)
         res.status(500).json({
@@ -29,18 +29,17 @@ const findAllCadastro = async (req, res) => {
 };
 
 const addNewCadastro = (req, res) => {
-    const senhaComHash = bcrypt.hashSync(req.body.senha, 10)
-    req.body.senha = senhaComHash
-
-    const cadastro = new Cadastros(req.body)
-
-    cadastro.save(function (err) {
-        if (err) {
-            res.status(500).send({ message: err.message })
-        }
-        res.status(201).send(cadastro.toJSON())
-    })
+    try{
+const {usuario, email, senha} = req.body
+const senhaComHash = bcrypt.hashSync(senha, 10)
+const cadastro = new Cadastros({usuario, email, senha: senhaComHash})
+cadastro.save()
+res.status(201).json({ message: "cadastro realizado com sucesso", cadastro})
+} catch (err) {
+res.status(500).json({ message: err.message })
 }
+}
+
 const deleteCadastro = async (req, res) => {
     try {
         const authHeader = req.get("authorization")
@@ -68,6 +67,7 @@ const deleteCadastro = async (req, res) => {
 }
 const login = (req, res) => {
     Cadastros.findOne({ email: req.body.email }, function (err, cadastro) {
+        console.log("todos os logins", cadastro)
         if (!cadastro) {
             return res.status(404).send(`não existe cadastro com o email ${req.body.email}!`)
         }
@@ -77,6 +77,7 @@ const login = (req, res) => {
         }
         const token = jwt.sign({ email: req.body.email }, SECRET)
         return res.status(200).send(token)
+    
     })
 }
 

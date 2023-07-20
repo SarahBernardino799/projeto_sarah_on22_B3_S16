@@ -35,7 +35,7 @@ const dancaSchema = mongoose.Schema(
         cadastro: {
             type: mongoose.Schema.Types.ObjectId,
             required: true,
-            ref: "Cadastro",
+            ref: "Cadastro"
         },
     },
     {
