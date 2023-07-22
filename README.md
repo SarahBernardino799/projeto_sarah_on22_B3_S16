@@ -1,8 +1,17 @@
+<h1 align="center">
+  <img src="festival_API/material/capaApiFestiva.PNG" alt="Festival" width="800">
+</h1>
+
 # Projeto
 ## SARAH BERNARDINO
 ### Festival 
 ### **MINHA HISTÓRIA** 
-Olá me chamo Sarah sou voluntária em organização de eventos, participo do **24° Festival do Ballet Raio de Sol** ` A Magia do Circo. ` 
+
+<h1 align="center">
+  <img src="festival_API/material/APRESENTACAO.PNG" alt="Festival" width="800">
+</h1>
+
+ 
 
 ### 🌈 **Apresentação** 
  Este é o projeto de conclusão do bootcamp de back-end da Turma On22 da [{Reprograma}](https://www.reprograma.com.br/).
@@ -247,4 +256,18 @@ Atenciosamente,
 Sarah Bernardino 
 
 <br>
-contato
+
+### 📌 Contato
+
+📝[Linkedin](https://festival-api.onrender.com/minha-rota-de-documentacao/)
+
+📝[Github](https://github.com/SarahBernardino799)
+
+📝[Slide](https://www.canva.com/design/DAFpTpGTN9s/WNutoHhwQkyKWQZSkF1eVg/edit?utm_content=DAFpTpGTN9s&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+-------------------------------------------
+
+<h1 align="center">
+  <img src="festival_API/material/AGRADECIMENTO.PNG" alt="Festival" width="800">
+</h1>
+__________________________________________________________
