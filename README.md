@@ -8,7 +8,7 @@
 ### **MINHA HISTÓRIA** 
 
 <h1 align="center">
-  <img src="festival_API/material/APRESENTACAO.PNG" alt="Festival" width="800">
+  <img src="festival_API/material/APRESENTACAO.PNG" alt="apresentação" width="800">
 </h1>
 
  
@@ -270,4 +270,4 @@ Sarah Bernardino
 <h1 align="center">
   <img src="festival_API/material/AGRADECIMENTO.PNG" alt="Festival" width="800">
 </h1>
-__________________________________________________________
+__________________________________________________________________________________________
