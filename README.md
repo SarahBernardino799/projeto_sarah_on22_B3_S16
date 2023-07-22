@@ -212,7 +212,7 @@ ________________________________________________________________________________
 
 📝[Swagger](https://festival-api.onrender.com/minha-rota-de-documentacao/)
 
-
+📝[Render](https://festival-api.onrender.com)
 
 ### ✨ **Instalação e Contribuição no projeto** 
 ________________________________________________________________
@@ -231,3 +231,16 @@ _________________________________________________________
 ---------------------------------------------------------
 
 ### ❤️ Agradecimentos
+<br>
+Gostaria de aproveitar esta oportunidade para agradecer a todas vocês pelo trabalho duro e dedicação com o Bootcamp de Back-End. O esforço e compromisso de todas foram fundamentais para o sucesso do meu projeto Festival_API.
+Sou especialmente grata a Mayhhara por sua liderança e orientação. Seu conhecimento e experiência foram inestimáveis para o meu projeto.
+Também gostaria de agradecer a Andreza por seu apoio. Você criou um ambiente positivo e produtivo para todos nós trabalharmos.
+Ju, agradeço seu apoio e orientação. Sua ajuda foi muito importante para o nosso desenvolvimento pessoal e profissional.
+Professoras Sky, Suzik, Millena, Camila, Gaia Maria, Agnes, Karol(doguinho) agradeço seu tempo, dedicação, sua presença e apoio. Sua energia e positividade fizeram toda a diferença.
+Obrigado novamente a todos vocês pelo trabalho duro e dedicação. Estou muito orgulhosa do que conquistamos juntas.
+
+Atenciosamente,
+Sarah Bernardino 
+
+<br>
+contato

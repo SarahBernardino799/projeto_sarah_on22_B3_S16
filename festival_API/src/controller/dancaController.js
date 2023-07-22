@@ -70,7 +70,7 @@ try {
         }
     const {id} = req.params
     const deletedDanca = await dancaModel.findByIdAndDelete(id)
-    const message = `A Dança ${deletedDanca.name_Danca} foi deletada com sucesso.`
+    const message = `A Dança ${deletedDanca.nome_Danca} foi deletada com sucesso.`
     res.status(200).json({message})
     })
 } catch (error) {
