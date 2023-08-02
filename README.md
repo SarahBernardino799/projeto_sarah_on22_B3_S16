@@ -253,7 +253,7 @@ Professoras Sky, Suzik, Millena, Camila, Gaia Maria, Agnes, Karol(doguinho) agra
 Obrigado novamente a todos vocês pelo trabalho duro e dedicação. Estou muito orgulhosa do que conquistamos juntas.
 
 Atenciosamente,
-Sarah Bernardino 
+Sarah Bernardino.
 
 <br>
 
